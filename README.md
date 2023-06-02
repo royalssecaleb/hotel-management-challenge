@@ -52,6 +52,7 @@ Getting started 🚀
         # fontawesome - npm i --save @fortawesome/fontawesome-svg-core
         Install tw-element to use implment complex component (https://tailwind-elements.com/docs/standard/getting-started/quick-start/)
         # tw-element  - npm install tw-elements
+        # add extra font to tailwind css app - https://medium.com/@Roon/custom-font-family-with-tailwind-css-in-react-2216c5cb4abc
     
     How to run 🏃‍
     ==============
