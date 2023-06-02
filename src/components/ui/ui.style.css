@@ -1,17 +1,11 @@
 /* styles for button */
 .btn{
-    @apply py-1 px-10 border border-[rgb(26,101,238)] rounded-3xl 
+    @apply py-1 px-10 border border-[rgb(26,101,238)] rounded-3xl text-[rgb(26,101,238)]
 }
 
 .btn-outline{
     @apply text-[rgb(26,101,238)]
 }
-
-
-.btn-fill{
-    @apply text-white bg-[rgb(26,101,238)]
-}
-
 
 /* style for review badge */
 
@@ -27,7 +21,7 @@
 
 /* style for room card */
 .card_container{
-   @apply rounded-2xl shadow-lg  bg-white pt-3 px-3 border border-gray-200
+   @apply rounded-2xl shadow-xl  bg-white pt-3 px-3 border border-gray-100 hover:cursor-pointer
 }
 
 .card_container:hover{

@@ -3,11 +3,11 @@
 }
 /* style for portfolio section */
 .section_portfolio{
-    @apply mx-20 mt-40 max-[1050px]:m-10;
+    @apply mx-20 mt-20 max-[1050px]:m-10;
 }
 /* style for review section */
 .section_review{
-    @apply flex justify-between mx-20 mt-0;
+    @apply flex justify-between items-center mx-20 mt-0;
 }
 
 .review_title{

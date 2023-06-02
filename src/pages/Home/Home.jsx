@@ -49,6 +49,7 @@ const Home = () => {
         setArrayImage(changeImage(index, arr_image));
         setFlag(!flag);
     }
+    
     return (
         <div>
             {/* portfolio section */}

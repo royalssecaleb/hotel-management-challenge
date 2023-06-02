@@ -2,6 +2,8 @@
 import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+
 //import style for Navbar
 import './navbar.style.css';
 //import button ui component
@@ -15,7 +17,7 @@ const Navbar = () => {
         <header>
             <nav className='navbar'>
                 <div className='nav_left'>
-                    <h2 className='logo'>Tripster</h2>
+                    <a href="#" className='logo'>Tripster</a>
                     <ul className='max-[910px]:hidden'>
                         {
                             [
@@ -39,8 +41,8 @@ const Navbar = () => {
                     <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
                 </button>
                 <div className='nav_right'>
-                    <Button className={"btn btn-outline"} content={"Sign Up"} handleClick={()=>{alert('SignUp Clicked!')}}/>
-                    <Button className={"btn btn-fill"} content={"Log  in"} handleClick={()=>{alert('Login Clicked!')}}/>
+                    <Button className={"btn btn-outline hover:text-white hover:bg-[rgb(26,101,238)]"} content={"Sign Up"} handleClick={()=>{alert('SignUp Clicked!')}}/>
+                    <Button className={"btn btn-outline hover:text-white hover:bg-[rgb(26,101,238)]"} content={"Log  in"} handleClick={()=>{alert('Login Clicked!')}}/>
                 </div>
                 {/* responsive section */}
                 <div className={` ${visible ? "" : "hidden"} bg-gray-200 shadow-2xl absolute p-3 right-0 top-0 h-full float-right w-1/3 z-10`}>
@@ -53,11 +55,11 @@ const Navbar = () => {
                                     ['Attractions' , '/attraction' ,2],
                                     ['Popular' , '/popular' ,3]
                                 ].map(([title,  url, index])=>(
-                                    <a href={url} className='bg-gray-200 w-full shadow p-2 text-center mt-5 hover:-translate-y-2' key={index}>{title}</a>
+                                    <a href={url} className='bg-gray-200 w-full shadow p-2 text-center mt-5 ' key={index}>{title}</a>
                                 ))}
                         </ul>
-                        <button className=' w-full shadow-md p-2 text-center mt-5 hover:-translate-y-2 bg-blue-600 text-white rounded-3xl' onClick={()=>{alert('Login Clicked')}}>Log in</button>
-                        <button className=' w-full shadow-md p-2 text-center mt-5 hover:-translate-y-2 bg-blue-600 text-white rounded-3xl' onClick={()=>{alert('Sign up Clicked')}}>Sign up</button>
+                        <button className=' w-full shadow-md p-2 text-center mt-5  border border-[rgb(26,101,238)] text-[rgb(26,101,238)]  hover:bg-[rgb(26,101,238)] hover:text-white rounded-3xl' onClick={()=>{alert('Login Clicked')}}>Log in</button>
+                        <button className=' w-full shadow-md p-2 text-center mt-5  border border-[rgb(26,101,238)]  text-[rgb(26,101,238)] hover:bg-[rgb(26,101,238)] hover:text-white rounded-3xl' onClick={()=>{alert('Sign up Clicked')}}>Sign up</button>
                     </div>
                 </div>
                 {/* responsive section end */}

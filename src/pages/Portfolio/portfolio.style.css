@@ -3,7 +3,7 @@
 }
 
 .slideImage{
-    @apply rounded-[25px] w-full h-full;
+    @apply rounded-[25px] w-full h-full hover:border hover:border-blue-600 hover:cursor-pointer
 }
 
 .galleryImage{
