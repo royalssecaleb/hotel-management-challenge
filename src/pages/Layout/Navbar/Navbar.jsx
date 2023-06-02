@@ -2,7 +2,6 @@
 import React, {useState} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
 
 //import style for Navbar
 import './navbar.style.css';
@@ -17,7 +16,7 @@ const Navbar = () => {
         <header>
             <nav className='navbar'>
                 <div className='nav_left'>
-                    <a href="#" className='logo'>Tripster</a>
+                    <a href="/" className='logo'>Tripster</a>
                     <ul className='max-[910px]:hidden'>
                         {
                             [
