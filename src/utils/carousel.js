@@ -2,7 +2,7 @@
 //rotate image in given order
 export const handleImage = (arr) => {
     const count = arr.length;
-    let temp_arr = new Array;
+    let temp_arr = [];
     for (var i=0;i<count-1;i++) {
         temp_arr.push(arr[i+1]);
     }

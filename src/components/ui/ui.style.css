@@ -37,10 +37,10 @@
  /* style for feedback section */
 
 .feedback_container{
-    @apply flex flex-row max-[775px]:flex-col justify-between h-2/3 p-2 
+    @apply flex flex-row max-[975px]:flex-col justify-between h-2/3 p-2 
 }
 
 
 .feedback_container_right{
-    @apply flex flex-col justify-between py-5 max-[775px]:flex-row
+    @apply flex flex-col justify-between py-5 max-[975px]:flex-row
 }

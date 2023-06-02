@@ -13,7 +13,7 @@ const Reviews = ({title, name ,description, pros, rate, level, date}) => {
                 <p className="text-md mt-2">{description}</p>
                 <ul className="mt-5">
                     {pros.map((pron, index)=>(
-                        <li key={index} className="text-sm"><FontAwesomeIcon icon="fa-solid fa-star-half-stroke" /><FontAwesomeIcon icon={faStarHalfStroke} />  {pron}</li>
+                        <li key={index} className="text-sm"><FontAwesomeIcon icon={faStarHalfStroke} />  {pron}</li>
                     ))}
                 </ul>
             </div>
