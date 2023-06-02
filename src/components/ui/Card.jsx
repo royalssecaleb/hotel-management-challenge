@@ -37,7 +37,7 @@ const Card = ({price, title, sqm, people, service}) => {
                         <p>Pancakes or waffles with breakfast</p>
                     </div>
                     <div className='mt-4'>
-                        <Button className={"btn btn-fill w-full"} content={`Book now for $${price}`} handleClick={()=>{alert('buy credit')}}/> <Button />
+                        <Button className={"btn btn-fill w-full hover:bg-white hover:text-[][rgb(26,101,238)]"} content={`Book now for $${price}`} handleClick={()=>{alert('buy credit')}}/> <Button />
                     </div>
                 </div> 
             </div>
